@@ -27,5 +27,29 @@ By clicking on editable fields user can change its value. **Product** and **Pric
 
 There is *Add row* button under the table. By clicking on it opens dialog window which allows user to add new row to database. It also have validation for input data.
 
+## Database
+Database has two tables *table_modify* and *category*. First one contains products rows with categories ids. Second table contains categories names.
+
 ## Table example
-[[]]
+![alt](https://github.com/DimaOrdenov/browser-db-editor/blob/master/Table-example.PNG)
+
+## Code and files review
+> index.php
+
+Main executable file that contains *html*, *php*, *js + AJAX*
+
+> ajax.php
+
+PHP file that contains code which will be executed on AJAX requests. There three functions over there: *edit(), add(), del()*. I hope names represents their functionality.
+
+> config.php
+
+Small PHP file for database connection parameters.
+
+> db.sql
+
+SQL dump file for used database.
+
+> css/main.css
+
+Base and only stylesheet file. I've used [Bootstrap styles](http://getbootstrap.com/) here. I should say that I am not very good at front-end develop so *css* could seems really rubbish corresponding to good styles.
